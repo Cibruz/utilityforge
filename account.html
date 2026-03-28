@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="UtilityForge pricing — free forever for core tools, upgrade to Pro for unlimited access and no ads.">
+<title>Pricing | UtilityForge</title>
+<link rel="stylesheet" href="style.css">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5971482762015123" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header>
+<span class="menu-btn" onclick="toggleSidebar()">☰</span>
+<a href="index.html" class="logo">Utility<span>Forge</span></a>
+</header>
+
+<!-- PRICING -->
+<div id="pricing" class="account-section" hidden>
+
+<div class="pricing-hero">
+  <h1>Simple, honest pricing</h1>
+  <p>Start free. Upgrade when you need more power. No hidden fees, no surprises.</p>
+</div>
+
+<div class="pricing-cards">
+
+  <div class="pricing-card">
+    <h2>Free</h2>
+    <div class="pricing-price"><sup>$</sup>0<sub>/month</sub></div>
+    <p class="pricing-desc">All the core tools, always free. No credit card required.</p>
+    <ul class="pricing-features">
+      <li><span class="check">✓</span> All 30+ tools</li>
+      <li><span class="check">✓</span> 5,000 character input limit</li>
+      <li><span class="check">✓</span> Generate up to 10 items at once</li>
+      <li><span class="check">✓</span> 100% browser-based, no data stored</li>
+      <li><span class="cross">✗</span> Ads shown</li>
+      <li><span class="cross">✗</span> Bulk generation (10+ items)</li>
+      <li><span class="cross">✗</span> Download results as file</li>
+      <li><span class="cross">✗</span> Tool history</li>
+    </ul>
+    <a href="auth.html#signup" class="btn-plan btn-plan-free">Get Started Free</a>
+  </div>
+
+  <div class="pricing-card popular">
+    <div class="popular-badge">⭐ Most Popular</div>
+    <h2>Pro</h2>
+    <div class="pricing-price"><sup>$</sup>4<sub>.99/month</sub></div>
+    <p class="pricing-desc">Unlimited access, no ads, and premium features for power users.</p>
+    <ul class="pricing-features">
+      <li><span class="check">✓</span> Everything in Free</li>
+      <li><span class="check">✓</span> Unlimited input size</li>
+      <li><span class="check">✓</span> Bulk generate unlimited items</li>
+      <li><span class="check">✓</span> <strong>Ad-free experience</strong></li>
+      <li><span class="check">✓</span> Download results as .txt / .csv</li>
+      <li><span class="check">✓</span> Tool history (last 50 results)</li>
+      <li><span class="check">✓</span> Dark mode</li>
+      <li><span class="check">✓</span> Priority email support</li>
+    </ul>
+    <button class="btn-plan" onclick="goToPro()">Upgrade to Pro</button>
+  </div>
+
+</div>
+
+<div style="text-align:center;padding:0 24px 60px;">
+  <h2 style="font-size:22px;font-weight:800;color:#0F172A;margin-bottom:12px;">Frequently Asked Questions</h2>
+
+  <div style="max-width:600px;margin:28px auto;text-align:left;">
+
+    <div style="margin-bottom:20px;padding:20px;background:white;border-radius:12px;border:1.5px solid #E2E8F0;">
+      <h3 style="font-size:15px;font-weight:700;margin-bottom:6px;">Can I use the free plan forever?</h3>
+      <p style="color:#64748B;font-size:14px;margin:0;">Yes. The free plan never expires. Core tools are always free with no time limit.</p>
+    </div>
+
+    <div style="margin-bottom:20px;padding:20px;background:white;border-radius:12px;border:1.5px solid #E2E8F0;">
+      <h3 style="font-size:15px;font-weight:700;margin-bottom:6px;">Can I cancel Pro anytime?</h3>
+      <p style="color:#64748B;font-size:14px;margin:0;">Yes. Cancel any time with no questions asked. Your plan stays active until the end of the billing period.</p>
+    </div>
+
+    <div style="margin-bottom:20px;padding:20px;background:white;border-radius:12px;border:1.5px solid #E2E8F0;">
+      <h3 style="font-size:15px;font-weight:700;margin-bottom:6px;">What payment methods are accepted?</h3>
+      <p style="color:#64748B;font-size:14px;margin:0;">We accept all major credit and debit cards via Stripe. Payments are secure and encrypted.</p>
+    </div>
+
+    <div style="margin-bottom:20px;padding:20px;background:white;border-radius:12px;border:1.5px solid #E2E8F0;">
+      <h3 style="font-size:15px;font-weight:700;margin-bottom:6px;">Is there a yearly plan?</h3>
+      <p style="color:#64748B;font-size:14px;margin:0;">Yes — pay annually and get 2 months free ($39.99/year). Coming soon.</p>
+    </div>
+
+  </div>
+</div>
+
+</div><!-- end #pricing -->
+
+<!-- HISTORY -->
+<div id="history" class="account-section" hidden>
+
+<div id="sidebar" class="sidebar closed">
+  <nav>
+    <a href="index.html">🏠 Home</a>
+    <a href="#history">📋 Tool History</a>
+    <a href="#pricing">⭐ Upgrade to Pro</a>
+  </nav>
+</div>
+
+<main class="main-content" style="max-width:860px;margin:40px auto;padding:0 24px;">
+  <div id="historyWrap">
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:24px;">
+      <h1 style="font-size:26px;font-weight:800;color:#0F172A;">Tool History</h1>
+      <button onclick="clearHistory()" style="background:#FEE2E2;color:#991B1B;border:none;padding:8px 16px;border-radius:8px;cursor:pointer;font-size:13px;font-weight:600;">Clear All</button>
+    </div>
+    <div id="historyList"></div>
+  </div>
+</main>
+
+</div><!-- end #history -->
+
+<!-- PAYMENT SUCCESS -->
+<div id="payment-success" class="account-section" hidden>
+
+<main style="max-width:560px;margin:80px auto;padding:0 24px;text-align:center;">
+  <div style="background:white;border-radius:20px;padding:48px 40px;box-shadow:0 4px 24px rgba(0,0,0,0.08);border:1.5px solid #E2E8F0;">
+    <div style="font-size:56px;margin-bottom:20px;">🎉</div>
+    <h1 style="font-size:28px;font-weight:800;color:#0F172A;margin-bottom:12px;">You're now Pro!</h1>
+    <p style="color:#64748B;font-size:16px;margin-bottom:32px;">
+      Welcome to UtilityForge Pro. Your account has been upgraded — enjoy unlimited access, no ads, dark mode, download results, and tool history.
+    </p>
+
+    <div style="background:#F0FDF4;border:1.5px solid #BBF7D0;border-radius:12px;padding:20px;margin-bottom:32px;text-align:left;">
+      <h3 style="font-size:14px;font-weight:700;color:#166534;margin-bottom:10px;">What's included in your Pro plan:</h3>
+      <ul style="list-style:none;padding:0;margin:0;color:#166534;font-size:14px;">
+        <li style="padding:4px 0;">✓ Unlimited input size on all tools</li>
+        <li style="padding:4px 0;">✓ Bulk generate unlimited items</li>
+        <li style="padding:4px 0;">✓ Ad-free experience</li>
+        <li style="padding:4px 0;">✓ Download results as .txt / .csv</li>
+        <li style="padding:4px 0;">✓ Tool history (last 50 results)</li>
+        <li style="padding:4px 0;">✓ Dark mode</li>
+        <li style="padding:4px 0;">✓ Priority email support</li>
+      </ul>
+    </div>
+
+    <div id="activationStatus" style="color:#64748B;font-size:14px;margin-bottom:24px;">Activating your Pro access…</div>
+
+    <a href="index.html" style="display:inline-block;background:linear-gradient(135deg,#4F46E5,#7C3AED);color:white;padding:14px 36px;border-radius:12px;text-decoration:none;font-weight:700;font-size:16px;">Start Using Pro Tools</a>
+  </div>
+</main>
+
+</div><!-- end #payment-success -->
+
+<footer class="footer"></footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase-config.js"></script>
+<script src="auth.js"></script>
+<script src="script.js"></script>
+<script>
+var currentSection = null;
+
+function route() {
+  var hash = location.hash.replace('#', '') || 'pricing';
+  document.querySelectorAll('.account-section').forEach(function(s) { s.hidden = true; });
+  var el = document.getElementById(hash);
+  if (el) {
+    el.hidden = false;
+    if (hash === 'pricing') {
+      document.title = 'Pricing | UtilityForge';
+    } else if (hash === 'history') {
+      document.title = 'Tool History | UtilityForge';
+      if (currentSection !== 'history') { initHistory(); }
+    } else if (hash === 'payment-success') {
+      document.title = 'Payment Successful | UtilityForge';
+      if (currentSection !== 'payment-success') { initPaymentSuccess(); }
+    }
+    currentSection = hash;
+  }
+}
+
+window.addEventListener('hashchange', route);
+window.addEventListener('load', route);
+
+/* History page logic */
+async function initHistory() {
+  var wrap = document.getElementById('historyWrap');
+  var list = document.getElementById('historyList');
+  var user = await getCurrentUser();
+
+  if (!user) {
+    wrap.innerHTML = '<div style="text-align:center;padding:60px 20px;"><div style="font-size:48px;margin-bottom:16px;">🔒</div><h2 style="font-size:22px;font-weight:700;color:#0F172A;margin-bottom:8px;">Sign in required</h2><p style="color:#64748B;margin-bottom:24px;">Please sign in to view your tool history.</p><a href="auth.html#login" style="background:#4F46E5;color:white;padding:12px 28px;border-radius:10px;text-decoration:none;font-weight:600;">Sign In</a></div>';
+    return;
+  }
+
+  if (!isPro()) {
+    wrap.innerHTML = '<div style="text-align:center;padding:60px 20px;"><div style="font-size:48px;margin-bottom:16px;">⭐</div><h2 style="font-size:22px;font-weight:700;color:#0F172A;margin-bottom:8px;">Pro feature</h2><p style="color:#64748B;margin-bottom:24px;">Tool history is available on the Pro plan. Upgrade to keep the last 50 results.</p><a href="#pricing" style="background:#4F46E5;color:white;padding:12px 28px;border-radius:10px;text-decoration:none;font-weight:600;">Upgrade to Pro</a></div>';
+    return;
+  }
+
+  var history = JSON.parse(localStorage.getItem('uf_history') || '[]');
+
+  if (history.length === 0) {
+    list.innerHTML = '<p style="color:#64748B;text-align:center;padding:40px 0;">No history yet. Use some tools and your results will appear here.</p>';
+    return;
+  }
+
+  list.innerHTML = history.map(function(item) {
+    return '<div class="history-item"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;"><span style="font-weight:700;color:#0F172A;">' + escHtml(item.tool) + '</span><span style="font-size:12px;color:#94A3B8;">' + new Date(item.date).toLocaleString() + '</span></div><div style="font-size:13px;color:#475569;margin-bottom:4px;"><strong>Input:</strong> ' + escHtml(item.input) + '</div><div style="font-size:13px;color:#475569;"><strong>Output:</strong> ' + escHtml(item.output.substring(0, 200)) + (item.output.length > 200 ? '\u2026' : '') + '</div></div>';
+  }).join('');
+}
+
+function escHtml(str) {
+  return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
+function clearHistory() {
+  if (confirm('Clear all tool history?')) {
+    localStorage.removeItem('uf_history');
+    document.getElementById('historyList').innerHTML = '<p style="color:#64748B;text-align:center;padding:40px 0;">History cleared.</p>';
+  }
+}
+
+/* Payment success page logic */
+async function initPaymentSuccess() {
+  var statusEl = document.getElementById('activationStatus');
+  var user = await getCurrentUser();
+  if (!user) {
+    statusEl.innerHTML = 'Please <a href="auth.html#login" style="color:#4F46E5;">sign in</a> to activate your Pro plan.';
+    return;
+  }
+
+  localStorage.removeItem('uf_plan');
+  var plan = await getUserPlan();
+
+  if (plan === 'pro') {
+    statusEl.style.color = '#166534';
+    statusEl.textContent = '✓ Pro access activated on your account (' + user.email + ')';
+    document.body.classList.add('is-pro');
+  } else {
+    statusEl.innerHTML = 'If your Pro access is not active yet, <a href="account.html#payment-success" style="color:#4F46E5;">refresh this page</a> in a few seconds. Stripe webhooks may take a moment to sync.';
+  }
+}
+</script>
+</body>
+</html>

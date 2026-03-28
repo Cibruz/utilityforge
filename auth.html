@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Sign in or create a free UtilityForge account to unlock premium tools and features.">
+<title>Sign In | UtilityForge</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<span class="menu-btn" onclick="toggleSidebar()">☰</span>
+<a href="index.html" class="logo">Utility<span>Forge</span></a>
+</header>
+
+<!-- LOGIN -->
+<div id="login" class="auth-page" hidden>
+<div class="auth-container">
+  <div class="auth-card">
+    <h1>Welcome back</h1>
+    <p class="auth-subtitle">Sign in to your UtilityForge account</p>
+
+    <div class="alert-error" id="loginError"></div>
+    <div class="alert-success" id="loginSuccess"></div>
+
+    <form onsubmit="signInWithEmail(event)">
+      <div class="form-group">
+        <label for="loginEmail">Email address</label>
+        <input type="email" id="loginEmail" placeholder="you@example.com" required>
+      </div>
+      <div class="form-group">
+        <label for="loginPassword">Password</label>
+        <input type="password" id="loginPassword" placeholder="••••••••" required>
+      </div>
+      <button type="submit" class="btn-full" id="loginBtn">Sign In</button>
+    </form>
+
+    <div class="auth-switch">
+      Don't have an account? <a href="#signup">Sign up free</a>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- SIGNUP -->
+<div id="signup" class="auth-page" hidden>
+<div class="auth-container">
+  <div class="auth-card">
+    <h1>Create free account</h1>
+    <p class="auth-subtitle">Join thousands of developers and professionals</p>
+
+    <div class="alert-error" id="signupError"></div>
+    <div class="alert-success" id="signupSuccess"></div>
+
+    <form onsubmit="signUpWithEmail(event)">
+      <div class="form-group">
+        <label for="signupName">Full name</label>
+        <input type="text" id="signupName" placeholder="John Smith" required>
+      </div>
+      <div class="form-group">
+        <label for="signupEmail">Email address</label>
+        <input type="email" id="signupEmail" placeholder="you@example.com" required>
+      </div>
+      <div class="form-group">
+        <label for="signupPassword">Password</label>
+        <input type="password" id="signupPassword" placeholder="At least 8 characters" required minlength="8">
+      </div>
+      <button type="submit" class="btn-full" id="signupBtn">Create Free Account</button>
+    </form>
+
+    <p style="font-size:12px;color:#94A3B8;text-align:center;margin-top:16px;">
+      By signing up you agree to our <a href="info.html#privacy" style="color:#4F46E5;">Privacy Policy</a>.
+    </p>
+
+    <div class="auth-switch">
+      Already have an account? <a href="#login">Sign in</a>
+    </div>
+  </div>
+</div>
+</div>
+
+<footer class="footer"></footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase-config.js"></script>
+<script src="auth.js"></script>
+<script src="script.js"></script>
+<script>
+function route() {
+  var hash = location.hash.replace('#', '') || 'login';
+  document.querySelectorAll('.auth-page').forEach(function(s) { s.hidden = true; });
+  var el = document.getElementById(hash);
+  if (el) {
+    el.hidden = false;
+    document.title = (hash === 'signup') ? 'Sign Up Free | UtilityForge' : 'Sign In | UtilityForge';
+    document.querySelector('meta[name="description"]').setAttribute('content',
+      hash === 'signup'
+        ? 'Create a free UtilityForge account to unlock premium tools and features.'
+        : 'Sign in to your UtilityForge account to access premium tools and features.'
+    );
+  }
+}
+
+window.addEventListener('hashchange', route);
+window.addEventListener('load', route);
+
+async function signInWithEmail(e) {
+  e.preventDefault();
+  var btn = document.getElementById('loginBtn');
+  var errEl = document.getElementById('loginError');
+  var sucEl = document.getElementById('loginSuccess');
+  errEl.style.display = 'none';
+  sucEl.style.display = 'none';
+  btn.disabled = true;
+  btn.textContent = 'Signing in\u2026';
+  var result = await authSignIn(
+    document.getElementById('loginEmail').value,
+    document.getElementById('loginPassword').value
+  );
+  if (result.error) {
+    errEl.textContent = result.error.message;
+    errEl.style.display = 'block';
+    btn.disabled = false;
+    btn.textContent = 'Sign In';
+  } else {
+    sucEl.textContent = 'Signed in! Redirecting\u2026';
+    sucEl.style.display = 'block';
+    setTimeout(function() { window.location.href = 'index.html'; }, 1000);
+  }
+}
+
+async function signUpWithEmail(e) {
+  e.preventDefault();
+  var btn = document.getElementById('signupBtn');
+  var errEl = document.getElementById('signupError');
+  var sucEl = document.getElementById('signupSuccess');
+  errEl.style.display = 'none';
+  sucEl.style.display = 'none';
+  btn.disabled = true;
+  btn.textContent = 'Creating account\u2026';
+  var result = await authSignUp(
+    document.getElementById('signupEmail').value,
+    document.getElementById('signupPassword').value,
+    document.getElementById('signupName').value
+  );
+  if (result.error) {
+    errEl.textContent = result.error.message;
+    errEl.style.display = 'block';
+    btn.disabled = false;
+    btn.textContent = 'Create Free Account';
+  } else {
+    sucEl.textContent = 'Account created! Check your email to confirm, then sign in.';
+    sucEl.style.display = 'block';
+    btn.textContent = 'Done!';
+  }
+}
+</script>
+</body>
+</html>
