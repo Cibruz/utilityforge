@@ -1,0 +1,1277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Free online tools for developers and professionals.">
+<title>UtilityForge Tools</title>
+<link rel="stylesheet" href="style.css">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5971482762015123" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header>
+<span class="menu-btn" onclick="toggleSidebar()">☰</span>
+<a href="index.html" class="logo">Utility<span>Forge</span></a>
+</header>
+
+<div class="layout">
+
+<div class="sidebar" id="sidebar">
+
+<div class="category">
+<h3 onclick="toggleCategory(this)">Text Tools ▸</h3>
+<div class="category-items">
+<a href="#word-counter">Word Counter</a>
+<a href="#character-counter">Character Counter</a>
+<a href="#line-counter">Line Counter</a>
+<a href="#text-reverser">Text Reverser</a>
+<a href="#text-sorter">Text Sorter</a>
+<a href="#text-capitalizer">Text Capitalizer</a>
+<a href="#case-converter">Case Converter</a>
+<a href="#case-inverter">Case Inverter</a>
+<a href="#duplicate-checker">Duplicate Checker</a>
+<a href="#remove-duplicate-lines">Remove Duplicate Lines</a>
+<a href="#remove-empty-lines">Remove Empty Lines</a>
+</div>
+</div>
+
+<div class="category">
+<h3 onclick="toggleCategory(this)">Developer Tools ▸</h3>
+<div class="category-items">
+<a href="#json-formatter">JSON Formatter</a>
+<a href="#json-validator">JSON Validator</a>
+<a href="#jwt-decoder">JWT Decoder</a>
+<a href="#regex-tester">Regex Tester</a>
+<a href="#timestamp-converter">Timestamp Converter</a>
+</div>
+</div>
+
+<div class="category">
+<h3 onclick="toggleCategory(this)">Generators ▸</h3>
+<div class="category-items">
+<a href="#password-generator">Password Generator</a>
+<a href="#password-list-generator">Password List Generator</a>
+<a href="#uuid-generator">UUID Generator</a>
+<a href="#uuid-list-generator">UUID List Generator</a>
+<a href="#random-number">Random Number Generator</a>
+<a href="#random-string">Random String Generator</a>
+<a href="#random-color">Random Color Generator</a>
+<a href="#hex-generator">Random Hex Generator</a>
+<a href="#lorem-generator">Lorem Ipsum Generator</a>
+</div>
+</div>
+
+<div class="category">
+<h3 onclick="toggleCategory(this)">Encoding &amp; Hashing ▸</h3>
+<div class="category-items">
+<a href="#base64">Base64 Encoder/Decoder</a>
+<a href="#base64-url-encoder">Base64 URL Encoder</a>
+<a href="#url-encoder">URL Encoder/Decoder</a>
+<a href="#sha256-generator">SHA-256 Generator</a>
+<a href="#md5-generator">MD5 Generator</a>
+</div>
+</div>
+
+</div>
+
+<div class="content">
+
+<!-- ===== TEXT TOOLS ===== -->
+
+<div id="word-counter" class="tool-section" hidden>
+<h1>Word Counter</h1>
+<h2>What is a Word Counter?</h2>
+<p>
+A word counter is a simple tool that helps you calculate the number of words, characters, and sentences in your text. It is useful for students, writers, bloggers, and professionals who need to meet word limits or analyze their content.
+</p>
+<h2>How to Use This Tool</h2>
+<ul>
+  <li>Enter or paste your text into the box above</li>
+  <li>Click on "Count Words"</li>
+  <li>View your word and character count instantly</li>
+</ul>
+<textarea id="textInput" placeholder="Enter text"></textarea>
+<button onclick="countWords()">Count Words</button>
+<p id="result"></p>
+<h2>Features</h2>
+<ul>
+  <li>Instant word count</li>
+  <li>Character count</li>
+  <li>Simple and clean interface</li>
+  <li>Works on all devices</li>
+</ul>
+<h2>Who Can Use This Tool?</h2>
+<p>This tool is helpful for:</p>
+<ul>
+  <li>Students writing assignments</li>
+  <li>Bloggers checking article length</li>
+  <li>Writers and authors</li>
+  <li>Professionals preparing reports</li>
+</ul>
+<h2>Frequently Asked Questions</h2>
+<h3>Is this word counter free?</h3>
+<p>Yes, this tool is completely free to use.</p>
+<h3>Does it store my data?</h3>
+<p>No, your text is not stored or shared.</p>
+<h3>Can I use it on mobile?</h3>
+<p>Yes, it works on all devices including mobile phones.</p>
+</div>
+
+<div id="character-counter" class="tool-section" hidden>
+<h1>Character Counter</h1>
+<h2>What is a Character Counter?</h2>
+<p>
+A character counter is a tool that helps you count the total number of characters in a given text. It includes letters, numbers, spaces, and special symbols. This tool is especially useful when working with character limits.
+</p>
+<textarea id="charInput"></textarea>
+<br><br>
+<button onclick="countChars()">Count Characters</button>
+<p id="charResult"></p>
+<h2>How to Use This Tool</h2>
+<ul>
+  <li>Type or paste your text into the input box above</li>
+  <li>Click on "Count Characters"</li>
+  <li>Instantly view the total number of characters</li>
+</ul>
+<h2>Features</h2>
+<ul>
+  <li>Instant character counting</li>
+  <li>Includes spaces and special characters</li>
+  <li>Simple and user-friendly interface</li>
+  <li>Works on desktop and mobile devices</li>
+</ul>
+<h2>Who Can Use This Tool?</h2>
+<p>This tool is useful for:</p>
+<ul>
+  <li>Writers and bloggers</li>
+  <li>Students with assignment limits</li>
+  <li>Social media users (Twitter, Instagram captions)</li>
+  <li>Developers working with text constraints</li>
+</ul>
+<h2>Frequently Asked Questions</h2>
+<h3>Does this tool count spaces?</h3>
+<p>Yes, spaces are included in the character count.</p>
+<h3>Is this tool free to use?</h3>
+<p>Yes, it is completely free.</p>
+<h3>Is my data stored?</h3>
+<p>No, your text is not stored or shared.</p>
+</div>
+
+<div id="line-counter" class="tool-section" hidden>
+<h1>Line Counter</h1>
+<h2>What is a Line Counter?</h2>
+<p>
+A line counter is a tool that helps you count the total number of lines in a block of text. Each new line or paragraph is counted separately, making it useful for formatting, coding, and content analysis.
+</p>
+<textarea id="lineInput"></textarea>
+<br><br>
+<button onclick="countLines()">Count Lines</button>
+<p id="lineResult"></p>
+<h2>How to Use This Tool</h2>
+<ul>
+  <li>Paste or type your text into the input box above</li>
+  <li>Click on "Count Lines"</li>
+  <li>View the total number of lines instantly</li>
+</ul>
+<h2>Features</h2>
+<ul>
+  <li>Accurate line counting</li>
+  <li>Handles multi-line text easily</li>
+  <li>Simple and fast interface</li>
+  <li>No data is stored or shared</li>
+</ul>
+<h2>Who Can Use This Tool?</h2>
+<p>This tool is helpful for:</p>
+<ul>
+  <li>Developers counting lines of code</li>
+  <li>Writers organizing paragraphs</li>
+  <li>Students formatting assignments</li>
+  <li>Content creators managing text structure</li>
+</ul>
+<h2>Frequently Asked Questions</h2>
+<h3>What counts as a line?</h3>
+<p>Each new line separated by a line break is counted as one line.</p>
+<h3>Does it count empty lines?</h3>
+<p>Yes, empty lines may also be counted depending on formatting.</p>
+<h3>Is this tool free?</h3>
+<p>Yes, it is completely free to use.</p>
+</div>
+
+<div id="text-reverser" class="tool-section" hidden>
+<h1>Text Reverser</h1>
+<h2>What is a Text Reverser?</h2>
+<p>
+A text reverser is a tool that flips your text so that it appears in reverse order. It can reverse entire sentences, words, or characters, depending on how it is used. This tool is useful for fun, coding, and creative text formatting.
+</p>
+<h2>How to Use This Tool</h2>
+<ul>
+  <li>Enter or paste your text into the input box above</li>
+  <li>Click on "Reverse Text"</li>
+  <li>Your reversed text will appear instantly below</li>
+</ul>
+<textarea id="reverseInput"></textarea>
+<button onclick="reverseText()">Reverse Text</button>
+<textarea id="reverseOutput" readonly></textarea>
+<h2>Features</h2>
+<ul>
+  <li>Instant text reversal</li>
+  <li>Supports long text inputs</li>
+  <li>Simple and easy-to-use interface</li>
+  <li>No data storage or tracking</li>
+</ul>
+<h2>Who Can Use This Tool?</h2>
+<p>This tool is useful for:</p>
+<ul>
+  <li>Developers testing string manipulation</li>
+  <li>Students learning programming concepts</li>
+  <li>Social media users creating fun text</li>
+  <li>Writers experimenting with formatting</li>
+</ul>
+<h2>Frequently Asked Questions</h2>
+<h3>Does this tool change my original text?</h3>
+<p>No, it only displays a reversed version.</p>
+<h3>Is it safe to use?</h3>
+<p>Yes, your text is processed locally and not stored.</p>
+<h3>Can I reverse large text?</h3>
+<p>Yes, the tool supports large text inputs.</p>
+</div>
+
+<div id="text-sorter" class="tool-section" hidden>
+<h1>Text Sorter</h1>
+<p>Sort lines of text alphabetically in seconds. Paste your list, click Sort, and get an ordered result instantly — no signup required.</p>
+<textarea id="sortInput" placeholder="Paste your lines of text here (one item per line)..."></textarea>
+<button onclick="sortText()">Sort Lines A-Z</button>
+<textarea id="sortOutput" readonly placeholder="Sorted result will appear here..."></textarea>
+<h2>What is a Text Sorter?</h2>
+<p>A text sorter is a tool that arranges lines of text in alphabetical order. It treats each line as a separate item and sorts them using standard alphabetical (lexicographic) order. This is especially useful for organizing lists, cleaning datasets, and preparing content for further processing.</p>
+<h2>How to Use This Tool</h2>
+<ul>
+  <li>Paste your list of items into the input box above (one item per line)</li>
+  <li>Click the <strong>Sort Lines A-Z</strong> button</li>
+  <li>The sorted list will appear in the output box below</li>
+  <li>Copy the sorted result to use in your project</li>
+</ul>
+<h2>Features</h2>
+<ul>
+  <li>Sorts lines of text alphabetically (A to Z)</li>
+  <li>Handles large lists quickly</li>
+  <li>Runs entirely in your browser — no data sent to any server</li>
+  <li>Free with no registration required</li>
+</ul>
+<h2>Who Can Use This Tool?</h2>
+<ul>
+  <li>Writers organizing research notes or references</li>
+  <li>Developers sorting configuration values or enums</li>
+  <li>Students arranging bibliography entries</li>
+  <li>Data analysts preparing lists for reporting</li>
+</ul>
+<h2>Frequently Asked Questions</h2>
+<h3>Is sorting case-sensitive?</h3>
+<p>Yes, by default uppercase letters come before lowercase in alphabetical sorting (standard JavaScript sort behavior).</p>
+<h3>Is my text stored?</h3>
+<p>No. All processing happens locally in your browser.</p>
+<h3>Is this tool free?</h3>
+<p>Yes, completely free to use.</p>
+</div>
+
+<div id="text-capitalizer" class="tool-section" hidden>
+<h1>Text Capitalizer</h1>
+<p>Capitalize the first letter of every word in your text instantly. Perfect for formatting titles, headings, and names. Free and no signup required.</p>
+<textarea id="capInput" placeholder="Enter your text here..."></textarea>
+<button onclick="capitalizeText()">Capitalize Text</button>
+<textarea id="capOutput" readonly placeholder="Capitalized text will appear here..."></textarea>
+<h2>What is Text Capitalization?</h2>
+<p>Text capitalization (also called Title Case) converts the first letter of each word to uppercase while keeping the rest of the letters as-is. This is commonly used for article titles, book names, headings, proper nouns, and button labels in user interfaces.</p>
+<h2>How to Use This Tool</h2>
+<ul>
+  <li>Type or paste your text into the input box above</li>
+  <li>Click the <strong>Capitalize Text</strong> button</li>
+  <li>The capitalized version will appear in the output box</li>
+  <li>Copy the result and use it wherever needed</li>
+</ul>
+<h2>Features</h2>
+<ul>
+  <li>Capitalizes the first letter of every word</li>
+  <li>Works with any amount of text</li>
+  <li>Runs entirely in your browser — no data sent to any server</li>
+  <li>Free to use with no registration required</li>
+</ul>
+<h2>Who Can Use This Tool?</h2>
+<ul>
+  <li>Writers and bloggers formatting article titles</li>
+  <li>Students writing academic papers</li>
+  <li>Developers generating display names from raw data</li>
+  <li>Social media managers formatting post headings</li>
+</ul>
+<h2>Frequently Asked Questions</h2>
+<h3>Does this follow standard title case rules?</h3>
+<p>This tool capitalizes the first letter of every word. For formal title case (which skips articles and prepositions), you may need to review the result manually.</p>
+<h3>Is my text stored?</h3>
+<p>No. All processing happens locally in your browser.</p>
+<h3>Is this tool free?</h3>
+<p>Yes, completely free to use.</p>
+</div>
+
+<div id="case-converter" class="tool-section" hidden>
+<h1>Case Converter</h1>
+<p>Convert your text to UPPERCASE or lowercase instantly. Paste any text and click a button to change its case — free and no signup required.</p>
+<textarea id="caseInput" placeholder="Enter your text here..."></textarea>
+<button onclick="toUpper()">Convert to UPPERCASE</button>
+<button onclick="toLower()">Convert to lowercase</button>
+<textarea id="caseOutput" readonly placeholder="Converted text will appear here..."></textarea>
+<h2>What is Case Conversion?</h2>
+<p>Case conversion changes the letter casing of your text. Converting to uppercase means all letters become capital letters (e.g. "hello world" → "HELLO WORLD"). Converting to lowercase means all letters become small letters (e.g. "HELLO WORLD" → "hello world"). This is useful when you need to standardize text formatting quickly.</p>
+<h2>How to Use This Tool</h2>
+<ul>
+  <li>Type or paste your text into the input box above</li>
+  <li>Click <strong>Convert to UPPERCASE</strong> to make all letters capital</li>
+  <li>Or click <strong>Convert to lowercase</strong> to make all letters small</li>
+  <li>Copy the result from the output box</li>
+</ul>
+<h2>Features</h2>
+<ul>
+  <li>Instantly converts text to uppercase or lowercase</li>
+  <li>Works with any language that uses the Latin alphabet</li>
+  <li>Handles large amounts of text efficiently</li>
+  <li>Runs entirely in your browser — no data sent anywhere</li>
+  <li>Free with no registration required</li>
+</ul>
+<h2>Who Can Use This Tool?</h2>
+<ul>
+  <li>Writers correcting accidental caps lock text</li>
+  <li>Developers normalizing string input</li>
+  <li>Students formatting citations or headings</li>
+  <li>Anyone needing quick text case changes</li>
+</ul>
+<h2>Frequently Asked Questions</h2>
+<h3>Does this work with numbers and symbols?</h3>
+<p>Numbers and symbols are not affected by case conversion — only letters change.</p>
+<h3>Is my text stored?</h3>
+<p>No. All processing happens locally in your browser.</p>
+<h3>Is this tool free?</h3>
+<p>Yes, completely free to use.</p>
+</div>
+
+<div id="case-inverter" class="tool-section" hidden>
+<h1>Case Inverter</h1>
+<p>Flip the case of every character in your text instantly. Uppercase letters become lowercase and lowercase become uppercase. Free and no signup required.</p>
+<textarea id="invertInput" placeholder="Enter your text here..."></textarea>
+<button onclick="invertCase()">Invert Case</button>
+<textarea id="invertOutput" readonly placeholder="Inverted text will appear here..."></textarea>
+<h2>What is Case Inversion?</h2>
+<p>Case inversion flips the case of every individual letter in your text. Any uppercase letter becomes lowercase, and any lowercase letter becomes uppercase. For example, "Hello World" becomes "hELLO wORLD". Symbols, numbers, and spaces are left unchanged.</p>
+<h2>How to Use This Tool</h2>
+<ul>
+  <li>Type or paste your text into the input box above</li>
+  <li>Click the <strong>Invert Case</strong> button</li>
+  <li>The case-inverted text will appear in the output box</li>
+  <li>Copy the result and use it wherever needed</li>
+</ul>
+<h2>Features</h2>
+<ul>
+  <li>Inverts the case of every letter character</li>
+  <li>Numbers and symbols are not affected</li>
+  <li>Runs entirely in your browser — no data sent anywhere</li>
+  <li>Free to use with no registration required</li>
+</ul>
+<h2>Who Can Use This Tool?</h2>
+<ul>
+  <li>Writers and students experimenting with text formatting</li>
+  <li>Developers testing string manipulation functions</li>
+  <li>Social media users creating stylized text effects</li>
+  <li>Anyone who needs to quickly flip text case</li>
+</ul>
+<h2>Frequently Asked Questions</h2>
+<h3>Does this affect numbers and symbols?</h3>
+<p>No. Only alphabetical letters are affected. Numbers, spaces, and symbols remain unchanged.</p>
+<h3>Is my text stored?</h3>
+<p>No. All processing happens locally in your browser.</p>
+<h3>Is this tool free?</h3>
+<p>Yes, completely free to use.</p>
+</div>
+
+<div id="duplicate-checker" class="tool-section" hidden>
+<h1>Duplicate Line Checker</h1>
+<p>Find out how many duplicate lines are in your text instantly. Paste your content below and get a count of repeated lines in one click.</p>
+<textarea id="dupInput" placeholder="Paste your text here (one item per line)..."></textarea>
+<button onclick="checkDuplicates()">Check for Duplicates</button>
+<p id="dupResult" style="font-size:20px;font-weight:bold;margin-top:15px;"></p>
+<h2>What is a Duplicate Checker?</h2>
+<p>A duplicate line checker scans a block of text and counts how many lines appear more than once. It compares each line exactly as written and reports the total number of duplicate (repeated) lines. This is useful for cleaning data, reviewing lists, and auditing content for repetition.</p>
+<h2>How to Use This Tool</h2>
+<ul>
+  <li>Paste your text into the input box above (one entry per line)</li>
+  <li>Click the <strong>Check for Duplicates</strong> button</li>
+  <li>The tool will display the number of duplicate lines found</li>
+</ul>
+<h2>Features</h2>
+<ul>
+  <li>Counts the number of duplicate lines in your text</li>
+  <li>Exact line matching (case-sensitive)</li>
+  <li>Runs entirely in your browser — no data sent anywhere</li>
+  <li>Free to use with no registration required</li>
+</ul>
+<h2>Who Can Use This Tool?</h2>
+<ul>
+  <li>Data analysts checking datasets for repeated entries</li>
+  <li>Writers reviewing content for unintentional repetition</li>
+  <li>Developers validating lists and config files</li>
+  <li>Students proofreading large documents</li>
+</ul>
+<h2>Frequently Asked Questions</h2>
+<h3>Is the check case-sensitive?</h3>
+<p>Yes. "Hello" and "hello" are treated as different lines.</p>
+<h3>Is my data stored?</h3>
+<p>No. All processing happens locally in your browser.</p>
+<h3>Is this tool free?</h3>
+<p>Yes, completely free to use.</p>
+</div>
+
+<div id="remove-duplicate-lines" class="tool-section" hidden>
+<h1>Remove Duplicate Lines</h1>
+<p>Paste your text and instantly remove all duplicate lines, keeping only the first occurrence of each unique line. Free, fast, and works entirely in your browser.</p>
+<textarea id="input" placeholder="Paste your text here (one item per line)..."></textarea>
+<button onclick="removeDuplicates()">Remove Duplicate Lines</button>
+<textarea id="output" placeholder="Cleaned text will appear here..." readonly></textarea>
+<h2>What Does This Tool Do?</h2>
+<p>This tool removes repeated lines from a block of text, keeping only the first occurrence of each unique line. All subsequent duplicates are deleted. This is different from a duplicate counter — instead of just reporting duplicates, this tool actively removes them and gives you a clean output.</p>
+<h2>How to Use This Tool</h2>
+<ul>
+  <li>Paste your text into the input box above (one item per line)</li>
+  <li>Click <strong>Remove Duplicate Lines</strong></li>
+  <li>The cleaned text with all duplicates removed appears in the output box</li>
+  <li>Copy the result to use in your project</li>
+</ul>
+<h2>Features</h2>
+<ul>
+  <li>Removes all duplicate lines, keeping only unique lines</li>
+  <li>Preserves the original order of first occurrences</li>
+  <li>Runs entirely in your browser — no data sent to any server</li>
+  <li>Free to use with no registration required</li>
+</ul>
+<h2>Common Uses</h2>
+<ul>
+  <li>Cleaning up exported mailing lists or contact lists</li>
+  <li>Removing repeated entries from log files</li>
+  <li>Deduplicating keyword lists or tags</li>
+  <li>Cleaning datasets for data analysis</li>
+</ul>
+<h2>Frequently Asked Questions</h2>
+<h3>Which duplicate is kept?</h3>
+<p>The first occurrence of each line is kept. All subsequent duplicates are removed.</p>
+<h3>Is the comparison case-sensitive?</h3>
+<p>Yes. "Apple" and "apple" are treated as different lines.</p>
+<h3>Is this tool free?</h3>
+<p>Yes, completely free to use.</p>
+</div>
+
+<div id="remove-empty-lines" class="tool-section" hidden>
+<h1>Remove Empty Lines</h1>
+<p>Paste your text and instantly strip out all blank lines, giving you a clean, compact output. Free and works entirely in your browser.</p>
+<textarea id="emptyInput" placeholder="Paste your text here..."></textarea>
+<button onclick="removeEmptyLines()">Remove Empty Lines</button>
+<textarea id="emptyOutput" readonly placeholder="Cleaned text will appear here..."></textarea>
+<h2>What Does This Tool Do?</h2>
+<p>This tool removes all blank or empty lines from your text, producing a more compact and clean result. Lines containing only whitespace (spaces or tabs) are also considered empty and will be removed. This is useful when copying text from various sources that may contain extra blank lines.</p>
+<h2>How to Use This Tool</h2>
+<ul>
+  <li>Paste your text into the input box above</li>
+  <li>Click the <strong>Remove Empty Lines</strong> button</li>
+  <li>The output will appear below with all empty lines removed</li>
+  <li>Copy the cleaned result to use in your project</li>
+</ul>
+<h2>Features</h2>
+<ul>
+  <li>Removes all blank lines including whitespace-only lines</li>
+  <li>Preserves all non-empty lines in their original order</li>
+  <li>Runs entirely in your browser — no data sent to any server</li>
+  <li>Free to use with no registration required</li>
+</ul>
+<h2>Common Uses</h2>
+<ul>
+  <li>Cleaning up text pasted from PDFs or Word documents</li>
+  <li>Compacting code or configuration files</li>
+  <li>Preparing content for word processors or editors</li>
+  <li>Removing gaps from exported spreadsheet data</li>
+</ul>
+<h2>Frequently Asked Questions</h2>
+<h3>Does it remove lines with only spaces?</h3>
+<p>Yes. Lines that contain only spaces or tabs are treated as empty and removed.</p>
+<h3>Is my data stored?</h3>
+<p>No. Processing happens locally in your browser.</p>
+<h3>Is this tool free?</h3>
+<p>Yes, completely free to use.</p>
+</div>
+
+<!-- ===== DEVELOPER TOOLS ===== -->
+
+<div id="json-formatter" class="tool-section" hidden>
+<h1>JSON Formatter</h1>
+<p>Paste your minified or compact JSON and instantly format it into a clean, human-readable structure with proper indentation. Free, fast, and works entirely in your browser.</p>
+<textarea id="jsonInput" placeholder="Paste your JSON here..."></textarea>
+<button onclick="formatJSON()">Format JSON</button>
+<textarea id="jsonOutput" readonly placeholder="Formatted JSON will appear here..."></textarea>
+<h2>What is JSON Formatting?</h2>
+<p>JSON (JavaScript Object Notation) is a lightweight data-interchange format. When JSON is minified or received from an API, it is compressed into a single line that is hard to read. A JSON formatter takes this compact text and restructures it with proper indentation and line breaks, making it easy to read and debug.</p>
+<h2>How to Use This Tool</h2>
+<ul>
+  <li>Paste your raw or minified JSON into the input box above</li>
+  <li>Click the <strong>Format JSON</strong> button</li>
+  <li>The formatted, indented JSON will appear in the output box</li>
+  <li>Copy the output to use in your project or editor</li>
+</ul>
+<h2>Features</h2>
+<ul>
+  <li>Instantly beautifies minified JSON with 4-space indentation</li>
+  <li>Displays a clear error message if the JSON is invalid</li>
+  <li>Runs entirely in your browser — no data is sent to any server</li>
+  <li>Completely free with no signup required</li>
+</ul>
+<h2>Who Uses JSON Formatting?</h2>
+<ul>
+  <li>Developers debugging API responses</li>
+  <li>Data engineers working with JSON datasets</li>
+  <li>Students learning about data formats</li>
+  <li>Anyone working with configuration files</li>
+</ul>
+<h2>Frequently Asked Questions</h2>
+<h3>What happens if my JSON is invalid?</h3>
+<p>The tool will display "Invalid JSON" in the output box. Double-check your JSON for missing commas, brackets, or quotes.</p>
+<h3>Is my data stored?</h3>
+<p>No. All processing happens locally in your browser. No data is sent to any server.</p>
+<h3>Is this tool free?</h3>
+<p>Yes, completely free to use.</p>
+</div>
+
+<div id="json-validator" class="tool-section" hidden>
+<h1>JSON Validator</h1>
+<p>Quickly check whether your JSON is valid or invalid. Paste your JSON below and get an instant result — no signup or installation needed.</p>
+<textarea id="jsonValidateInput" placeholder="Paste your JSON here to validate..."></textarea>
+<button onclick="validateJSON()">Validate JSON</button>
+<p id="jsonResult" style="font-size:18px;font-weight:bold;margin-top:15px;"></p>
+<h2>What is JSON Validation?</h2>
+<p>JSON validation checks whether a given piece of text follows the correct JSON syntax. Even a single missing comma, bracket, or misplaced quote can make JSON invalid. This tool helps you quickly identify and fix such issues before using the data in your code or API.</p>
+<h2>How to Use This Tool</h2>
+<ul>
+  <li>Paste your JSON into the text area above</li>
+  <li>Click the <strong>Validate JSON</strong> button</li>
+  <li>The result will tell you if your JSON is valid or invalid</li>
+</ul>
+<h2>Features</h2>
+<ul>
+  <li>Instant validation with clear pass/fail output</li>
+  <li>Works with any valid JSON structure — objects, arrays, nested data</li>
+  <li>All processing happens in your browser — nothing is sent to a server</li>
+  <li>Free to use with no account required</li>
+</ul>
+<h2>Common JSON Errors</h2>
+<ul>
+  <li>Missing closing brackets <code>}</code> or <code>]</code></li>
+  <li>Trailing commas after the last item in an object or array</li>
+  <li>Using single quotes instead of double quotes around strings</li>
+  <li>Missing quotes around object keys</li>
+  <li>Unescaped special characters inside strings</li>
+</ul>
+<h2>Frequently Asked Questions</h2>
+<h3>What counts as valid JSON?</h3>
+<p>Valid JSON must follow the RFC 8259 specification — proper use of braces, brackets, commas, colons, and double-quoted strings.</p>
+<h3>Is my data stored?</h3>
+<p>No. Validation happens entirely in your browser. Your data never leaves your device.</p>
+<h3>Is this free?</h3>
+<p>Yes, completely free to use.</p>
+</div>
+
+<div id="jwt-decoder" class="tool-section" hidden>
+<h1>JWT Decoder</h1>
+<p>Decode and inspect the payload of any JWT (JSON Web Token) instantly. Paste your token below — everything runs in your browser and no data is sent to any server.</p>
+<textarea id="jwtInput" placeholder="Paste your JWT token here..."></textarea>
+<button onclick="decodeJWT()">Decode JWT</button>
+<textarea id="jwtOutput" readonly placeholder="Decoded payload will appear here..."></textarea>
+<h2>What is a JWT?</h2>
+<p>A JWT (JSON Web Token) is a compact, URL-safe way of representing claims between two parties. It is commonly used for authentication and authorization in web applications. A JWT consists of three parts separated by dots: the header, the payload, and the signature.</p>
+<h2>How to Use This Tool</h2>
+<ul>
+  <li>Paste your JWT token into the input box above</li>
+  <li>Click the <strong>Decode JWT</strong> button</li>
+  <li>The decoded payload will appear in the output box in readable JSON format</li>
+</ul>
+<h2>Features</h2>
+<ul>
+  <li>Decodes the payload section of any JWT token</li>
+  <li>Displays the result as formatted JSON</li>
+  <li>Runs entirely in your browser — no data is sent to any server</li>
+  <li>Completely free with no registration required</li>
+</ul>
+<h2>Important Note</h2>
+<p>This tool only decodes the payload — it does not verify the JWT signature. Never paste production tokens containing sensitive data into any online tool.</p>
+<h2>Frequently Asked Questions</h2>
+<h3>Does this verify the JWT signature?</h3>
+<p>No. This tool only decodes the base64-encoded payload. Signature verification requires the secret key.</p>
+<h3>Is my token stored?</h3>
+<p>No. The token is decoded locally in your browser and is never sent to any server.</p>
+<h3>Is this tool free?</h3>
+<p>Yes, completely free to use.</p>
+</div>
+
+<div id="regex-tester" class="tool-section" hidden>
+<h1>Regex Tester</h1>
+<p>Test your regular expressions against any text instantly. Enter your pattern and test string below to see if there is a match — no installation required.</p>
+<label><strong>Regex Pattern:</strong></label><br>
+<input id="regexPattern" placeholder="e.g. ^[a-z]+$" style="width:100%;padding:10px;margin-bottom:15px;border:1px solid #ccc;border-radius:6px;">
+<label><strong>Text to Test:</strong></label>
+<textarea id="regexText" placeholder="Enter the text to test your regex against..."></textarea>
+<button onclick="testRegex()">Test Regex</button>
+<p id="regexResult" style="font-size:18px;font-weight:bold;margin-top:15px;"></p>
+<h2>What is a Regular Expression?</h2>
+<p>A regular expression (regex) is a sequence of characters that forms a search pattern. Regex is used in programming for pattern matching within strings — for tasks like validating email addresses, searching for keywords, or extracting data from text.</p>
+<h2>How to Use This Tool</h2>
+<ul>
+  <li>Enter your regex pattern in the first field (e.g. <code>\d+</code> to match numbers)</li>
+  <li>Enter the text you want to test in the second field</li>
+  <li>Click <strong>Test Regex</strong> to see if the pattern matches</li>
+</ul>
+<h2>Common Regex Examples</h2>
+<ul>
+  <li><code>\d+</code> — matches one or more digits</li>
+  <li><code>^[a-zA-Z]+$</code> — matches strings containing only letters</li>
+  <li><code>\b\w{5}\b</code> — matches exactly 5-letter words</li>
+  <li><code>[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}</code> — basic email pattern</li>
+</ul>
+<h2>Frequently Asked Questions</h2>
+<h3>What regex flavour is used?</h3>
+<p>This tool uses JavaScript's built-in RegExp engine.</p>
+<h3>Is my data stored?</h3>
+<p>No. Everything runs locally in your browser. No data is sent anywhere.</p>
+<h3>Is this free?</h3>
+<p>Yes, completely free to use with no account required.</p>
+</div>
+
+<div id="timestamp-converter" class="tool-section" hidden>
+<h1>Timestamp Converter</h1>
+<p>Convert a Unix timestamp to a human-readable date and time instantly. Free, fast, and works entirely in your browser.</p>
+<input type="number" id="timestampInput" placeholder="Enter Unix timestamp (e.g. 1700000000)" style="width:100%;padding:10px;border:1px solid #ccc;border-radius:6px;margin-bottom:15px;">
+<button onclick="convertTimestamp()">Convert Timestamp</button>
+<p id="timestampResult" style="font-size:18px;margin-top:15px;"></p>
+<h2>What is a Unix Timestamp?</h2>
+<p>A Unix timestamp (also called Epoch time) is the number of seconds that have elapsed since January 1, 1970, at 00:00:00 UTC. It is widely used in software, databases, and APIs to represent points in time in a simple, universal integer format that is independent of time zones.</p>
+<h2>How to Use This Tool</h2>
+<ul>
+  <li>Enter a Unix timestamp in the input field (e.g. <code>1700000000</code>)</li>
+  <li>Click the <strong>Convert Timestamp</strong> button</li>
+  <li>The corresponding human-readable date and time will appear below</li>
+</ul>
+<h2>Features</h2>
+<ul>
+  <li>Converts any Unix timestamp to a readable UTC date string</li>
+  <li>Supports timestamps for dates from 1970 onward</li>
+  <li>Runs entirely in your browser — no data sent to any server</li>
+  <li>Completely free with no signup required</li>
+</ul>
+<h2>Common Uses</h2>
+<ul>
+  <li>Debugging API responses that return timestamps</li>
+  <li>Reading database records with epoch time fields</li>
+  <li>Understanding log file timestamps</li>
+  <li>Working with UNIX-based systems and scripts</li>
+</ul>
+<h2>Frequently Asked Questions</h2>
+<h3>What format is the output date in?</h3>
+<p>The date is displayed in UTC format, e.g. "Wed, 15 Nov 2023 08:00:00 GMT".</p>
+<h3>Can I convert a negative timestamp?</h3>
+<p>Yes. Negative timestamps represent dates before January 1, 1970.</p>
+<h3>Is this tool free?</h3>
+<p>Yes, completely free to use.</p>
+</div>
+
+<!-- ===== GENERATORS ===== -->
+
+<div id="password-generator" class="tool-section" hidden>
+<h1>Password Generator</h1>
+<p>Generate a strong, random password instantly with our free online tool. No account needed — everything runs locally in your browser.</p>
+<button onclick="generatePassword()">Generate Password</button>
+<br><br>
+<input id="passwordOutput" readonly style="width:100%;padding:10px;font-size:16px;border:1px solid #ccc;border-radius:6px;">
+<h2>What is a Strong Password?</h2>
+<p>A strong password is one that is difficult to guess or crack using brute-force methods. It should be long, contain a mix of uppercase and lowercase letters, numbers, and special characters, and should not be a common word or phrase.</p>
+<h2>How to Use This Tool</h2>
+<ul>
+  <li>Click the <strong>Generate Password</strong> button above</li>
+  <li>A random 12-character password will appear instantly</li>
+  <li>Copy and use it for your account or application</li>
+</ul>
+<h2>Features</h2>
+<ul>
+  <li>Generates a 12-character alphanumeric password</li>
+  <li>Runs entirely in your browser — no data is sent anywhere</li>
+  <li>Completely free with no signup required</li>
+  <li>Works on desktop and mobile devices</li>
+</ul>
+<h2>Why Use a Random Password?</h2>
+<p>Reusing passwords or using simple passwords is one of the most common causes of account hacks. A randomly generated password ensures that no human pattern is used, making it much harder for attackers to guess. Use a different strong password for each of your online accounts to stay safe.</p>
+<h2>Frequently Asked Questions</h2>
+<h3>Is this password generator secure?</h3>
+<p>The password is generated using JavaScript's Math.random() function directly in your browser. No passwords are stored, logged, or sent to any server.</p>
+<h3>Can I use these passwords for any account?</h3>
+<p>Yes. The generated passwords are suitable for most online accounts, applications, and services.</p>
+<h3>Is this tool free?</h3>
+<p>Yes, it is completely free to use with no registration required.</p>
+</div>
+
+<div id="password-list-generator" class="tool-section" hidden>
+<h1>Password List Generator</h1>
+<p>Generate multiple strong, random passwords at once. Enter how many you need and click Generate — all passwords are created instantly in your browser.</p>
+<input type="number" id="passCount" placeholder="How many passwords? (e.g. 10)" style="width:100%;padding:10px;border:1px solid #ccc;border-radius:6px;margin-bottom:15px;">
+<button onclick="generatePasswordList()">Generate Password List</button>
+<textarea id="passListOutput" readonly placeholder="Your generated passwords will appear here..."></textarea>
+<h2>What is a Password List Generator?</h2>
+<p>A password list generator creates multiple unique passwords at once. This is useful when you need to set up multiple accounts, create test credentials, or provide bulk credentials to a team. Each password in the list is independently and randomly generated.</p>
+<h2>How to Use This Tool</h2>
+<ul>
+  <li>Enter the number of passwords you want to generate (e.g. 10)</li>
+  <li>Click <strong>Generate Password List</strong></li>
+  <li>A list of random 12-character passwords will appear in the output box</li>
+  <li>Copy the list and use as needed</li>
+</ul>
+<h2>Features</h2>
+<ul>
+  <li>Generates multiple unique 12-character alphanumeric passwords</li>
+  <li>Each password is independently randomized</li>
+  <li>Runs entirely in your browser — no data stored or sent anywhere</li>
+  <li>Free to use with no registration required</li>
+</ul>
+<h2>Common Uses</h2>
+<ul>
+  <li>Setting up multiple user accounts in bulk</li>
+  <li>Generating test credentials for software testing</li>
+  <li>Creating temporary passwords for new team members</li>
+  <li>Populating databases with demo data</li>
+</ul>
+<h2>Frequently Asked Questions</h2>
+<h3>How many passwords can I generate at once?</h3>
+<p>You can generate as many as you need. Enter the count and click Generate.</p>
+<h3>Are these passwords stored?</h3>
+<p>No. All passwords are generated and displayed locally in your browser. Nothing is sent to any server.</p>
+<h3>Is this tool free?</h3>
+<p>Yes, completely free to use.</p>
+</div>
+
+<div id="uuid-generator" class="tool-section" hidden>
+<h1>UUID Generator</h1>
+<p>Generate a random UUID (Universally Unique Identifier) instantly in your browser. Uses the Web Crypto API to ensure cryptographic randomness.</p>
+<button onclick="generateUUID()">Generate UUID</button>
+<br><br>
+<input id="uuidOutput" readonly style="width:100%;padding:10px;font-size:16px;border:1px solid #ccc;border-radius:6px;">
+<h2>What is a UUID?</h2>
+<p>A UUID (Universally Unique Identifier) is a 128-bit number used to identify information in computer systems. It is typically written as 32 hexadecimal characters in the format <code>xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx</code>. UUIDs are designed to be globally unique — the probability of generating the same UUID twice is astronomically low.</p>
+<h2>How to Use This Tool</h2>
+<ul>
+  <li>Click the <strong>Generate UUID</strong> button above</li>
+  <li>A random version 4 UUID will appear in the output field</li>
+  <li>Copy it and use it in your application, database, or system</li>
+</ul>
+<h2>Features</h2>
+<ul>
+  <li>Generates RFC 4122 compliant version 4 UUIDs</li>
+  <li>Uses the browser's built-in <code>crypto.randomUUID()</code> for true randomness</li>
+  <li>Completely free with no signup required</li>
+  <li>Works on all modern browsers and devices</li>
+</ul>
+<h2>Common Uses for UUIDs</h2>
+<ul>
+  <li>Database primary keys</li>
+  <li>Session tokens and API keys</li>
+  <li>File naming to avoid conflicts</li>
+  <li>Distributed system identifiers</li>
+  <li>Transaction IDs in software applications</li>
+</ul>
+<h2>Frequently Asked Questions</h2>
+<h3>What version of UUID is generated?</h3>
+<p>This tool generates version 4 UUIDs, which are randomly generated and do not contain any information about the machine or time they were created.</p>
+<h3>Are generated UUIDs truly unique?</h3>
+<p>Yes. Version 4 UUIDs are randomly generated with 122 bits of randomness, making collisions practically impossible.</p>
+<h3>Is this tool free?</h3>
+<p>Yes, completely free to use with no registration required.</p>
+</div>
+
+<div id="uuid-list-generator" class="tool-section" hidden>
+<h1>UUID List Generator</h1>
+<p>Generate multiple unique UUIDs (Universally Unique Identifiers) at once. Enter the number you need and get a ready-to-use list instantly — free and no signup required.</p>
+<input type="number" id="uuidCount" placeholder="How many UUIDs? (e.g. 10)" style="width:100%;padding:10px;border:1px solid #ccc;border-radius:6px;margin-bottom:15px;">
+<button onclick="generateUUIDList()">Generate UUID List</button>
+<textarea id="uuidListOutput" readonly placeholder="Your generated UUIDs will appear here..."></textarea>
+<h2>What is a UUID List Generator?</h2>
+<p>A UUID list generator creates multiple unique identifiers at once. Instead of generating them one by one, you can specify how many you need and get them all in a single click. Each UUID is version 4 — randomly generated using the browser's Web Crypto API, ensuring true uniqueness.</p>
+<h2>How to Use This Tool</h2>
+<ul>
+  <li>Enter the number of UUIDs you want to generate (e.g. 10)</li>
+  <li>Click <strong>Generate UUID List</strong></li>
+  <li>The UUIDs will appear in the output box, one per line</li>
+  <li>Copy the list and paste it into your project, database, or spreadsheet</li>
+</ul>
+<h2>Features</h2>
+<ul>
+  <li>Generates any number of version 4 UUIDs at once</li>
+  <li>Uses the browser's <code>crypto.randomUUID()</code> for true randomness</li>
+  <li>One UUID per line for easy copying and pasting</li>
+  <li>Runs entirely in your browser — no data sent anywhere</li>
+  <li>Free to use with no registration required</li>
+</ul>
+<h2>Common Uses</h2>
+<ul>
+  <li>Seeding databases with unique primary keys</li>
+  <li>Generating test data for development and QA</li>
+  <li>Creating unique IDs for distributed systems</li>
+  <li>Bulk ID generation for spreadsheets or CSVs</li>
+</ul>
+<h2>Frequently Asked Questions</h2>
+<h3>Are all the generated UUIDs unique?</h3>
+<p>Yes. Version 4 UUIDs have 122 bits of randomness, making duplicates practically impossible.</p>
+<h3>Is there a limit to how many I can generate?</h3>
+<p>There is no hard limit — generate as many as you need in a single click.</p>
+<h3>Is this tool free?</h3>
+<p>Yes, completely free to use.</p>
+</div>
+
+<div id="random-number" class="tool-section" hidden>
+<h1>Random Number Generator</h1>
+<p>Generate a random number between any minimum and maximum value instantly. Great for games, statistics, testing, and decision making.</p>
+<input type="number" id="min" placeholder="Minimum (e.g. 1)" style="padding:10px;border:1px solid #ccc;border-radius:6px;width:48%;margin-right:2%;">
+<input type="number" id="max" placeholder="Maximum (e.g. 100)" style="padding:10px;border:1px solid #ccc;border-radius:6px;width:48%;">
+<br><br>
+<button onclick="generateRandom()">Generate Random Number</button>
+<p id="randomResult" style="font-size:36px;font-weight:bold;margin-top:15px;"></p>
+<h2>What is a Random Number Generator?</h2>
+<p>A random number generator (RNG) produces numbers that cannot be predicted. This tool uses JavaScript's <code>Math.random()</code> to generate a pseudo-random integer between any minimum and maximum value you specify, inclusive of both endpoints.</p>
+<h2>How to Use This Tool</h2>
+<ul>
+  <li>Enter a minimum value in the first field (e.g. 1)</li>
+  <li>Enter a maximum value in the second field (e.g. 100)</li>
+  <li>Click <strong>Generate Random Number</strong></li>
+  <li>A random number within your range will appear instantly</li>
+</ul>
+<h2>Features</h2>
+<ul>
+  <li>Generates random integers between any min and max range</li>
+  <li>Supports negative numbers and large ranges</li>
+  <li>Runs entirely in your browser — no data sent to any server</li>
+  <li>Free to use with no signup required</li>
+</ul>
+<h2>Common Uses</h2>
+<ul>
+  <li>Board games and dice simulations</li>
+  <li>Statistical sampling and testing</li>
+  <li>Selecting random items from a list by index</li>
+  <li>Random decision making</li>
+  <li>Lottery number generation</li>
+</ul>
+<h2>Frequently Asked Questions</h2>
+<h3>Is the number truly random?</h3>
+<p>It uses JavaScript's Math.random() which is a pseudo-random number generator — suitable for general use but not for cryptographic purposes.</p>
+<h3>Can I generate negative numbers?</h3>
+<p>Yes. Enter a negative number as your minimum value.</p>
+<h3>Is this tool free?</h3>
+<p>Yes, completely free to use.</p>
+</div>
+
+<div id="random-string" class="tool-section" hidden>
+<h1>Random String Generator</h1>
+<p>Generate a random alphanumeric string of any length instantly. Perfect for creating tokens, test data, unique IDs, and more.</p>
+<input type="number" id="length" placeholder="Enter length (e.g. 16)" style="width:100%;padding:10px;border:1px solid #ccc;border-radius:6px;margin-bottom:15px;">
+<button onclick="generateString()">Generate Random String</button>
+<br><br>
+<input id="stringOutput" readonly style="width:100%;padding:10px;font-size:16px;font-family:monospace;border:1px solid #ccc;border-radius:6px;">
+<h2>What is a Random String?</h2>
+<p>A random string is a sequence of characters selected randomly from a given character set. This tool generates alphanumeric strings using characters a-z, A-Z, and 0-9. Random strings are commonly used as tokens, IDs, test data, and placeholders in software development.</p>
+<h2>How to Use This Tool</h2>
+<ul>
+  <li>Enter the desired length of the string (e.g. 16)</li>
+  <li>Click <strong>Generate Random String</strong></li>
+  <li>The random string will appear in the output field</li>
+  <li>Copy it and use it wherever you need a random string</li>
+</ul>
+<h2>Features</h2>
+<ul>
+  <li>Generates alphanumeric strings of any length</li>
+  <li>Mix of uppercase, lowercase, and digits</li>
+  <li>Runs entirely in your browser — no data stored or sent</li>
+  <li>Free with no registration required</li>
+</ul>
+<h2>Common Uses</h2>
+<ul>
+  <li>Generating test data for databases</li>
+  <li>Creating session tokens or API keys (for non-critical use)</li>
+  <li>Filling forms with placeholder text</li>
+  <li>Generating random file names</li>
+</ul>
+<h2>Frequently Asked Questions</h2>
+<h3>What characters are included?</h3>
+<p>The string includes lowercase letters (a-z), uppercase letters (A-Z), and digits (0-9).</p>
+<h3>Is this suitable for security tokens?</h3>
+<p>For non-critical use only. For cryptographically secure tokens, use a dedicated library.</p>
+<h3>Is this tool free?</h3>
+<p>Yes, completely free to use.</p>
+</div>
+
+<div id="random-color" class="tool-section" hidden>
+<h1>Random Color Generator</h1>
+<p>Generate a random HEX color code instantly. Great for designers, developers, and anyone looking for color inspiration. Click the button to get a new color every time.</p>
+<button onclick="generateColor()">Generate Color</button>
+<br><br>
+<div id="colorBox" style="width:100%;max-width:300px;height:120px;border-radius:8px;border:1px solid #ccc;"></div>
+<p id="colorCode" style="font-size:22px;font-weight:bold;font-family:monospace;margin-top:10px;"></p>
+<h2>What is a HEX Color Code?</h2>
+<p>A HEX color code is a six-digit code used in HTML, CSS, and design tools to represent colors. It starts with a <code>#</code> symbol followed by three pairs of hexadecimal digits representing the Red, Green, and Blue (RGB) values of the color. For example, <code>#FF5733</code> represents a shade of orange-red.</p>
+<h2>How to Use This Tool</h2>
+<ul>
+  <li>Click the <strong>Generate Color</strong> button above</li>
+  <li>A random color will appear in the box, along with its HEX code</li>
+  <li>Copy the HEX code and use it in your CSS, design tool, or project</li>
+  <li>Click again to get a different random color</li>
+</ul>
+<h2>Features</h2>
+<ul>
+  <li>Generates a random HEX color code with every click</li>
+  <li>Visual color preview so you can see the color immediately</li>
+  <li>Runs entirely in your browser — no data stored or sent</li>
+  <li>Free to use with no registration required</li>
+</ul>
+<h2>Who Uses Random Color Generators?</h2>
+<ul>
+  <li>Web designers looking for color palette ideas</li>
+  <li>Artists and illustrators exploring color combinations</li>
+  <li>Developers testing UI components with different colors</li>
+  <li>Teachers and students in design courses</li>
+</ul>
+<h2>Frequently Asked Questions</h2>
+<h3>Can I use the generated color in my project?</h3>
+<p>Yes. Copy the HEX code and paste it into any design tool, CSS file, or color picker.</p>
+<h3>Is this tool free?</h3>
+<p>Yes, completely free to use with no account needed.</p>
+</div>
+
+<div id="hex-generator" class="tool-section" hidden>
+<h1>Random Hex Generator</h1>
+<p>Generate a random hexadecimal color code instantly. Perfect for web design, frontend development, and finding color inspiration.</p>
+<button onclick="generateHex()">Generate Hex Code</button>
+<p id="hexOutput" style="font-size:28px;font-weight:bold;font-family:monospace;margin-top:15px;"></p>
+<h2>What is a Hex Color Code?</h2>
+<p>A hexadecimal (hex) color code is a way of expressing colors using the base-16 number system. In CSS and HTML, hex codes start with <code>#</code> followed by six characters (0-9, A-F), where each pair represents the intensity of Red, Green, and Blue. For example, <code>#000000</code> is black and <code>#FFFFFF</code> is white.</p>
+<h2>How to Use This Tool</h2>
+<ul>
+  <li>Click the <strong>Generate Hex Code</strong> button</li>
+  <li>A random hex color code will appear below</li>
+  <li>Copy the code and use it in your CSS, HTML, or design software</li>
+</ul>
+<h2>Features</h2>
+<ul>
+  <li>Generates a random 6-digit hex color code</li>
+  <li>Runs entirely in your browser — no data sent anywhere</li>
+  <li>Completely free with no registration required</li>
+  <li>Works on all devices including mobile</li>
+</ul>
+<h2>Where to Use Hex Codes</h2>
+<ul>
+  <li>CSS color properties: <code>color: #FF5733;</code></li>
+  <li>HTML attributes: <code>bgcolor="#FF5733"</code></li>
+  <li>Graphic design tools like Figma, Canva, Photoshop</li>
+  <li>Brand identity and logo design</li>
+</ul>
+<h2>Frequently Asked Questions</h2>
+<h3>Is the hex code valid for use in CSS?</h3>
+<p>Yes. All generated codes follow the standard 6-digit hex format and are valid in CSS, HTML, and most design tools.</p>
+<h3>Is this tool free?</h3>
+<p>Yes, completely free to use with no signup required.</p>
+</div>
+
+<div id="lorem-generator" class="tool-section" hidden>
+<h1>Lorem Ipsum Generator</h1>
+<p>Generate Lorem Ipsum placeholder text instantly for your web design, wireframes, and content mockups. Free and no signup required.</p>
+<button onclick="generateLorem()">Generate Lorem Ipsum</button>
+<p id="loremText" style="margin-top:20px;line-height:1.7;font-size:15px;color:#444;"></p>
+<h2>What is Lorem Ipsum?</h2>
+<p>Lorem Ipsum is a standard placeholder text used in the printing and typesetting industry since the 1500s. It is derived from a Latin text by Cicero, but scrambled to be meaningless. Designers use Lorem Ipsum to fill space in layouts so that the focus remains on the visual design rather than the text content.</p>
+<h2>How to Use This Tool</h2>
+<ul>
+  <li>Click the <strong>Generate Lorem Ipsum</strong> button above</li>
+  <li>A paragraph of placeholder Latin text will appear below</li>
+  <li>Copy the text and paste it into your design, website, or document</li>
+</ul>
+<h2>Features</h2>
+<ul>
+  <li>Generates standard Lorem Ipsum placeholder text</li>
+  <li>Runs entirely in your browser — instant and free</li>
+  <li>No signup or registration required</li>
+  <li>Works on all devices including mobile</li>
+</ul>
+<h2>Where is Lorem Ipsum Used?</h2>
+<ul>
+  <li>Web design mockups and wireframes</li>
+  <li>Graphic design and print layouts</li>
+  <li>Typography testing and font previews</li>
+  <li>CMS templates and demo content</li>
+  <li>Email newsletter templates</li>
+</ul>
+<h2>Frequently Asked Questions</h2>
+<h3>Is Lorem Ipsum real Latin?</h3>
+<p>It is derived from real Latin text but has been altered and scrambled so it does not form meaningful sentences.</p>
+<h3>Can I use Lorem Ipsum in a production website?</h3>
+<p>Lorem Ipsum is intended as placeholder text only. Always replace it with real content before launching your website.</p>
+<h3>Is this tool free?</h3>
+<p>Yes, completely free to use.</p>
+</div>
+
+<!-- ===== ENCODING & HASHING ===== -->
+
+<div id="base64" class="tool-section" hidden>
+<h1>Base64 Encoder / Decoder</h1>
+<p>Encode plain text to Base64 or decode Base64 strings back to text instantly. All processing happens in your browser — no data is sent anywhere.</p>
+<textarea id="baseInput" placeholder="Enter text to encode, or Base64 to decode..."></textarea>
+<button onclick="encodeBase64()">Encode to Base64</button>
+<button onclick="decodeBase64()">Decode from Base64</button>
+<textarea id="baseOutput" readonly placeholder="Result will appear here..."></textarea>
+<h2>What is Base64?</h2>
+<p>Base64 is an encoding scheme that converts binary data into an ASCII string format. It is commonly used to transmit binary data (such as images or files) over text-based protocols like HTTP, email, or JSON. Base64 is not encryption — it is simply an encoding format.</p>
+<h2>How to Use This Tool</h2>
+<ul>
+  <li>To encode: paste plain text and click <strong>Encode to Base64</strong></li>
+  <li>To decode: paste a Base64 string and click <strong>Decode from Base64</strong></li>
+  <li>The result appears in the output box below</li>
+</ul>
+<h2>Features</h2>
+<ul>
+  <li>Encodes and decodes standard Base64 strings</li>
+  <li>Runs entirely in your browser — no data stored or sent</li>
+  <li>Supports text input of any length</li>
+  <li>Free to use with no registration required</li>
+</ul>
+<h2>Common Uses for Base64</h2>
+<ul>
+  <li>Embedding images in HTML or CSS using data URLs</li>
+  <li>Encoding email attachments (MIME encoding)</li>
+  <li>Storing binary data in JSON or XML</li>
+  <li>Basic obfuscation of strings in URLs or configs</li>
+</ul>
+<h2>Frequently Asked Questions</h2>
+<h3>Is Base64 the same as encryption?</h3>
+<p>No. Base64 is encoding, not encryption. Anyone can decode a Base64 string without any key.</p>
+<h3>Is my data stored?</h3>
+<p>No. Everything is processed locally in your browser.</p>
+<h3>Is this tool free?</h3>
+<p>Yes, completely free to use.</p>
+</div>
+
+<div id="base64-url-encoder" class="tool-section" hidden>
+<h1>Base64 URL Encoder</h1>
+<p>Encode text to URL-safe Base64 format instantly. This variant replaces <code>+</code> with <code>-</code>, <code>/</code> with <code>_</code>, and removes padding — making it safe to use in URLs and HTTP headers.</p>
+<textarea id="b64urlInput" placeholder="Enter text to encode..."></textarea>
+<button onclick="encodeB64URL()">Encode to Base64 URL</button>
+<textarea id="b64urlOutput" readonly placeholder="URL-safe Base64 will appear here..."></textarea>
+<h2>What is Base64 URL Encoding?</h2>
+<p>Base64 URL encoding is a variant of standard Base64 that is safe to use in URLs and filenames. Regular Base64 uses <code>+</code> and <code>/</code> characters, which have special meaning in URLs. Base64 URL encoding replaces them with <code>-</code> and <code>_</code> respectively, and also removes the <code>=</code> padding characters.</p>
+<h2>How to Use This Tool</h2>
+<ul>
+  <li>Enter or paste your text into the input box above</li>
+  <li>Click <strong>Encode to Base64 URL</strong></li>
+  <li>The URL-safe encoded string will appear in the output box</li>
+</ul>
+<h2>Features</h2>
+<ul>
+  <li>Produces RFC 4648 compliant URL-safe Base64</li>
+  <li>Removes padding characters automatically</li>
+  <li>Runs entirely in your browser — no data sent to any server</li>
+  <li>Free to use with no signup required</li>
+</ul>
+<h2>Common Uses</h2>
+<ul>
+  <li>JWT (JSON Web Token) header and payload encoding</li>
+  <li>URL-safe data encoding in REST APIs</li>
+  <li>OAuth tokens and authentication flows</li>
+  <li>Encoding data for use in cookies or query strings</li>
+</ul>
+<h2>Frequently Asked Questions</h2>
+<h3>What is the difference between Base64 and Base64 URL?</h3>
+<p>Base64 URL replaces <code>+</code> with <code>-</code> and <code>/</code> with <code>_</code>, and removes <code>=</code> padding. This makes it safe to use in URLs without percent-encoding.</p>
+<h3>Is my data stored?</h3>
+<p>No. All encoding happens locally in your browser.</p>
+<h3>Is this tool free?</h3>
+<p>Yes, completely free to use.</p>
+</div>
+
+<div id="url-encoder" class="tool-section" hidden>
+<h1>URL Encoder / Decoder</h1>
+<p>Encode special characters in a URL or decode percent-encoded URL strings instantly. Free, fast, and works entirely in your browser.</p>
+<textarea id="urlInput" placeholder="Enter text to encode, or a percent-encoded URL to decode..."></textarea>
+<button onclick="encodeURL()">Encode URL</button>
+<button onclick="decodeURL()">Decode URL</button>
+<textarea id="urlOutput" readonly placeholder="Result will appear here..."></textarea>
+<h2>What is URL Encoding?</h2>
+<p>URL encoding (also known as percent-encoding) converts special characters in a URL into a format that can be safely transmitted over the internet. Characters like spaces, ampersands, and equals signs are replaced with percent-encoded equivalents (e.g., a space becomes <code>%20</code>). This ensures URLs remain valid and unambiguous across all systems and browsers.</p>
+<h2>How to Use This Tool</h2>
+<ul>
+  <li>To encode: paste your text and click <strong>Encode URL</strong></li>
+  <li>To decode: paste your percent-encoded URL and click <strong>Decode URL</strong></li>
+  <li>The result appears in the output box below</li>
+</ul>
+<h2>Features</h2>
+<ul>
+  <li>Encodes and decodes URL strings using standard percent-encoding</li>
+  <li>Handles special characters, spaces, and Unicode correctly</li>
+  <li>Runs entirely in your browser — no data sent to any server</li>
+  <li>Free with no registration required</li>
+</ul>
+<h2>Common Uses</h2>
+<ul>
+  <li>Encoding query parameters in API requests</li>
+  <li>Decoding URLs received from redirects or web services</li>
+  <li>Preparing URLs for embedding in HTML attributes</li>
+  <li>Working with form data submitted via GET requests</li>
+</ul>
+<h2>Frequently Asked Questions</h2>
+<h3>What characters get encoded?</h3>
+<p>All characters except letters, digits, and <code>- _ . ! ~ * ' ( )</code> are percent-encoded.</p>
+<h3>Is my data stored?</h3>
+<p>No. Processing happens locally in your browser.</p>
+<h3>Is this tool free?</h3>
+<p>Yes, completely free to use.</p>
+</div>
+
+<div id="sha256-generator" class="tool-section" hidden>
+<h1>SHA-256 Hash Generator</h1>
+<p>Generate a SHA-256 cryptographic hash from any text instantly. Uses your browser's built-in Web Crypto API — no data is sent to any server.</p>
+<textarea id="shaInput" placeholder="Enter text to hash..."></textarea>
+<button onclick="generateSHA()">Generate SHA-256 Hash</button>
+<p id="shaOutput" style="word-break:break-all;font-family:monospace;font-size:14px;margin-top:15px;"></p>
+<h2>What is SHA-256?</h2>
+<p>SHA-256 (Secure Hash Algorithm 256-bit) is a cryptographic hash function that takes any input and produces a fixed 256-bit (64 hexadecimal character) output. It is a one-way function — you cannot reverse a SHA-256 hash back to the original text. SHA-256 is widely used in digital signatures, SSL certificates, blockchain, and password storage.</p>
+<h2>How to Use This Tool</h2>
+<ul>
+  <li>Type or paste your text into the input box above</li>
+  <li>Click <strong>Generate SHA-256 Hash</strong></li>
+  <li>The 64-character hash will appear below the button</li>
+  <li>Even a single character change in the input will produce a completely different hash</li>
+</ul>
+<h2>Features</h2>
+<ul>
+  <li>Uses the browser's Web Crypto API (<code>crypto.subtle.digest</code>) for accuracy</li>
+  <li>Generates the standard 64-character hex hash</li>
+  <li>Runs entirely in your browser — nothing is sent to any server</li>
+  <li>Free with no signup required</li>
+</ul>
+<h2>Common Uses for SHA-256</h2>
+<ul>
+  <li>Verifying file integrity (checksums)</li>
+  <li>Storing hashed passwords in databases</li>
+  <li>Digital signatures and certificates</li>
+  <li>Blockchain and cryptocurrency transactions</li>
+</ul>
+<h2>Frequently Asked Questions</h2>
+<h3>Can I reverse a SHA-256 hash?</h3>
+<p>No. SHA-256 is a one-way function. It is computationally infeasible to reverse a hash to get the original input.</p>
+<h3>Is my text stored?</h3>
+<p>No. All hashing happens locally in your browser. Your input is never sent anywhere.</p>
+<h3>Is this tool free?</h3>
+<p>Yes, completely free to use.</p>
+</div>
+
+<div id="md5-generator" class="tool-section" hidden>
+<h1>MD5 Hash Generator</h1>
+<p>Generate an MD5 hash from any text instantly in your browser. No data is sent to any server — all processing happens locally.</p>
+<textarea id="md5Input" placeholder="Enter text to generate MD5 hash..."></textarea>
+<button onclick="generateMD5()">Generate MD5 Hash</button>
+<p id="md5Output" style="word-break:break-all;font-family:monospace;font-size:14px;margin-top:15px;"></p>
+<h2>What is MD5?</h2>
+<p>MD5 (Message Digest Algorithm 5) is a widely used cryptographic hash function that produces a 128-bit (32 hexadecimal characters) hash value. It takes any input and produces a fixed-length fingerprint. MD5 is commonly used for checksums, file verification, and data integrity checks.</p>
+<h2>How to Use This Tool</h2>
+<ul>
+  <li>Type or paste your text into the input box above</li>
+  <li>Click <strong>Generate MD5 Hash</strong></li>
+  <li>The 32-character MD5 hash will appear below</li>
+  <li>Any change in the input text will produce a completely different hash</li>
+</ul>
+<h2>Features</h2>
+<ul>
+  <li>Generates standard 32-character MD5 hex hashes</li>
+  <li>Runs entirely in your browser — no data sent to any server</li>
+  <li>Instant results for any text input</li>
+  <li>Free to use with no registration required</li>
+</ul>
+<h2>Important Note on MD5 Security</h2>
+<p>MD5 is no longer considered secure for cryptographic purposes such as password storage or digital signatures, as it is vulnerable to collision attacks. For security-critical applications, use SHA-256 or stronger algorithms. MD5 remains useful for checksums and non-security data integrity verification.</p>
+<h2>Frequently Asked Questions</h2>
+<h3>Can I reverse an MD5 hash?</h3>
+<p>MD5 is designed to be a one-way function. However, common strings may appear in publicly available rainbow tables. Never use MD5 for password storage.</p>
+<h3>Is my text stored?</h3>
+<p>No. All hashing happens locally in your browser. Your input is never sent anywhere.</p>
+<h3>Is this tool free?</h3>
+<p>Yes, completely free to use.</p>
+</div>
+
+</div><!-- end .content -->
+</div><!-- end .layout -->
+
+<footer class="footer">
+<a href="info.html#about">About</a>
+<a href="info.html#contact">Contact</a>
+<a href="info.html#privacy">Privacy Policy</a>
+</footer>
+
+<script src="supabase-config.js"></script>
+<script src="auth.js"></script>
+<script src="script.js"></script>
+<script>
+const PAGE_META = {
+  'word-counter':          ['Word Counter | UtilityForge',           'Free online word counter tool. Count words, characters, and sentences instantly. No signup required - works on all devices.'],
+  'character-counter':     ['Character Counter | UtilityForge',      'Free online character counter. Count characters including spaces and special symbols instantly. Useful for Twitter, Instagram, and text limits.'],
+  'line-counter':          ['Line Counter | UtilityForge',           'Free online line counter tool. Count lines in any text instantly. Useful for developers, writers, and content creators.'],
+  'text-reverser':         ['Text Reverser | UtilityForge',          'Free online text reverser. Reverse any text, sentence, or string instantly in your browser. No data stored.'],
+  'text-sorter':           ['Text Sorter | UtilityForge',            'Free online text sorter. Sort lines of text alphabetically in seconds. Paste your text and click to sort.'],
+  'text-capitalizer':      ['Text Capitalizer | UtilityForge',       'Free online text capitalizer. Capitalize the first letter of every word instantly. Perfect for titles and headings.'],
+  'case-converter':        ['Case Converter | UtilityForge',         'Free online case converter. Convert text to UPPERCASE or lowercase instantly. Simple, fast, and free.'],
+  'case-inverter':         ['Case Inverter | UtilityForge',          'Free online case inverter. Flip the case of every character in your text instantly. Free and no signup required.'],
+  'duplicate-checker':     ['Duplicate Checker | UtilityForge',      'Free online duplicate line checker. Find and count duplicate lines in any text instantly. No data stored.'],
+  'remove-duplicate-lines':['Remove Duplicate Lines | UtilityForge', 'Free online tool to remove duplicate lines from text. Clean your lists and datasets instantly. No signup required.'],
+  'remove-empty-lines':    ['Remove Empty Lines | UtilityForge',     'Free online tool to remove empty lines from text. Clean up your text by removing blank lines instantly.'],
+  'json-formatter':        ['JSON Formatter | UtilityForge',         'Free online JSON formatter and beautifier. Format, indent, and prettify JSON data instantly in your browser.'],
+  'json-validator':        ['JSON Validator | UtilityForge',         'Free online JSON validator. Check if your JSON is valid instantly. No signup or installation required.'],
+  'jwt-decoder':           ['JWT Decoder | UtilityForge',            'Free online JWT decoder. Decode and inspect JWT token payloads instantly in your browser. No data is sent to any server.'],
+  'regex-tester':          ['Regex Tester | UtilityForge',           'Free online regex tester. Test regular expressions against text instantly. No installation or signup required.'],
+  'timestamp-converter':   ['Timestamp Converter | UtilityForge',    'Free online Unix timestamp converter. Convert Unix timestamps to human-readable dates and times instantly.'],
+  'password-generator':    ['Password Generator | UtilityForge',     'Free online password generator. Create strong, random 12-character passwords instantly in your browser. No signup required.'],
+  'password-list-generator':['Password List Generator | UtilityForge','Free online password list generator. Generate multiple strong random passwords at once. Bulk generation made easy.'],
+  'uuid-generator':        ['UUID Generator | UtilityForge',         'Free online UUID generator. Generate random version 4 UUIDs instantly using the Web Crypto API. No signup required.'],
+  'uuid-list-generator':   ['UUID List Generator | UtilityForge',    'Free online UUID list generator. Generate multiple unique identifiers at once for databases, testing, and development.'],
+  'random-number':         ['Random Number Generator | UtilityForge','Free online random number generator. Generate random numbers between any min and max range instantly.'],
+  'random-string':         ['Random String Generator | UtilityForge','Free online random string generator. Generate random alphanumeric strings of any length instantly.'],
+  'random-color':          ['Random Color Generator | UtilityForge', 'Free online random color generator. Generate random HEX colors for design, art, and web development instantly.'],
+  'hex-generator':         ['Random Hex Generator | UtilityForge',   'Free online random hex color code generator. Generate random hex codes for web design and development instantly.'],
+  'lorem-generator':       ['Lorem Ipsum Generator | UtilityForge',  'Free online Lorem Ipsum generator. Generate placeholder text for web design and development projects instantly.'],
+  'base64':                ['Base64 Encoder / Decoder | UtilityForge','Free online Base64 encoder and decoder. Encode or decode Base64 strings instantly in your browser. No data stored.'],
+  'base64-url-encoder':    ['Base64 URL Encoder | UtilityForge',     'Free online Base64 URL encoder. Convert text to URL-safe Base64 encoding instantly. No signup required.'],
+  'url-encoder':           ['URL Encoder / Decoder | UtilityForge',  'Free online URL encoder and decoder. Encode and decode URL strings using percent-encoding instantly.'],
+  'sha256-generator':      ['SHA256 Generator | UtilityForge',       'Free online SHA-256 hash generator. Generate SHA256 hashes from any text using the browser\'s Web Crypto API.'],
+  'md5-generator':         ['MD5 Hash Generator | UtilityForge',     'Free online MD5 hash generator. Generate MD5 hashes from any text instantly in your browser. No data stored.']
+};
+
+function route() {
+  const hash = location.hash.replace('#', '') || 'word-counter';
+  document.querySelectorAll('.tool-section').forEach(function(s) { s.hidden = true; });
+  var el = document.getElementById(hash);
+  if (el) {
+    el.hidden = false;
+    var meta = PAGE_META[hash];
+    if (meta) {
+      document.title = meta[0];
+      document.querySelector('meta[name="description"]').setAttribute('content', meta[1]);
+    }
+    document.querySelectorAll('.sidebar a').forEach(function(a) { a.classList.remove('active'); });
+    var activeLink = document.querySelector('.sidebar a[href="#' + hash + '"]');
+    if (activeLink) activeLink.classList.add('active');
+  }
+}
+
+window.addEventListener('hashchange', route);
+window.addEventListener('load', route);
+</script>
+</body>
+</html>
